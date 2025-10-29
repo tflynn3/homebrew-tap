@@ -5,21 +5,21 @@
 class Gcdiff < Formula
   desc "A terminal tool for comparing and auditing GCP resources across projects"
   homepage "https://github.com/tflynn3/gcdiff"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tflynn3/gcdiff/releases/download/v0.1.0/gcdiff_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "66e835508ae580126fed01ec2305b1eaedca111beaecc7af04d141bb0be6ba76"
+      url "https://github.com/tflynn3/gcdiff/releases/download/v0.2.0/gcdiff_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "b6aeb1d5028123b27e7913db7c756d94f4a3bb06404c87dbb767c2915d544b45"
 
       def install
         bin.install "gcdiff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tflynn3/gcdiff/releases/download/v0.1.0/gcdiff_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "51203721bfe27bd803f8603fb178f5d3fba18d22bd5078b6ff797beb924492f7"
+      url "https://github.com/tflynn3/gcdiff/releases/download/v0.2.0/gcdiff_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "08be4d99bb72bc2accec87c39ae9dd029109313675a79411fdd0e1c86d70de67"
 
       def install
         bin.install "gcdiff"
@@ -29,15 +29,15 @@ class Gcdiff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tflynn3/gcdiff/releases/download/v0.1.0/gcdiff_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "0e66564a6d997518f612c0484652d5debf151399a64941b14c4f809285246b01"
+      url "https://github.com/tflynn3/gcdiff/releases/download/v0.2.0/gcdiff_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "a9f50fec134a9052beab78aa0dd8dec475b55e5af93a5cf65da70ab21ad4ec60"
       def install
         bin.install "gcdiff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tflynn3/gcdiff/releases/download/v0.1.0/gcdiff_0.1.0_Linux_arm64.tar.gz"
-      sha256 "e1bd0cde183da468334c31ed9acf191edd4859ba35b8020b70f407a9344a5b7a"
+      url "https://github.com/tflynn3/gcdiff/releases/download/v0.2.0/gcdiff_0.2.0_Linux_arm64.tar.gz"
+      sha256 "38bebe1f5b63c0f9a1a503c9f71a5f34bb64bff5e01dbbf2c776d6e97c4745cf"
       def install
         bin.install "gcdiff"
       end
