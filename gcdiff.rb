@@ -11,7 +11,7 @@ class Gcdiff < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tflynn3/gcdiff/releases/download/v0.2.0/gcdiff_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "b6aeb1d5028123b27e7913db7c756d94f4a3bb06404c87dbb767c2915d544b45"
+      sha256 "722fe50e999ed921f39b7bd0f561719bf7875db594de6886bbed7071b48e6e07"
 
       def install
         bin.install "gcdiff"
@@ -19,7 +19,7 @@ class Gcdiff < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tflynn3/gcdiff/releases/download/v0.2.0/gcdiff_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "08be4d99bb72bc2accec87c39ae9dd029109313675a79411fdd0e1c86d70de67"
+      sha256 "71686c6ffc23287a1ba9b6c157948795c4334195733eb52ce209adcf52fc90c4"
 
       def install
         bin.install "gcdiff"
@@ -30,14 +30,14 @@ class Gcdiff < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tflynn3/gcdiff/releases/download/v0.2.0/gcdiff_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "a9f50fec134a9052beab78aa0dd8dec475b55e5af93a5cf65da70ab21ad4ec60"
+      sha256 "05344225177f258a54f93924b390a20d8b628eb0f757a4458a5f91ab69426797"
       def install
         bin.install "gcdiff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tflynn3/gcdiff/releases/download/v0.2.0/gcdiff_0.2.0_Linux_arm64.tar.gz"
-      sha256 "38bebe1f5b63c0f9a1a503c9f71a5f34bb64bff5e01dbbf2c776d6e97c4745cf"
+      sha256 "10984bd645e1caa1d04db9232bd8e5e71fdde131d472b9e4152d3e4567fb5baa"
       def install
         bin.install "gcdiff"
       end
